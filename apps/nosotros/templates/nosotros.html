@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}Inicio{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'Styles/styles-index.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<section id="Nosotros">
+    <div class="nosotros-container">
+        <img src="{% static 'images/abg-1.png' %}" alt="">
+        <div class="content-nosotros">
+            <h2>Bienvenido a Lex</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque fuga aliquid quibusdam vel nam iusto eveniet quia temporibus iste eius aut incidunt vitae quod, rerum id architecto earum, totam perferendis?.</p>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
