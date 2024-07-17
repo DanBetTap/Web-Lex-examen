@@ -1,3 +1,4 @@
+from django.contrib import admin
 from django.urls import path
 from . import views
 
@@ -9,3 +10,9 @@ urlpatterns = [
     # path('account/', views.account, name='account'),
 ]
 
+urlpatterns = [
+    path('admin/'admin.site.urls),
+    path("lex/", include("lex.urls")),
+    path("", include("lex.urls")),
+    path("accounts/", include("lex.urls")),
+]
