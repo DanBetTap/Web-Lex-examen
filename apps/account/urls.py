@@ -9,10 +9,3 @@ urlpatterns = [
     path('logout/', views.logout_view, name='logout'),
     # path('account/', views.account, name='account'),
 ]
-
-urlpatterns = [
-    path('admin/'admin.site.urls),
-    path("lex/", include("lex.urls")),
-    path("", include("lex.urls")),
-    path("accounts/", include("lex.urls")),
-]
